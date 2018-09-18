@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sinh bảng cửu chương</title>
+    <script>
+        function bangcuuchuong()
+        {
+            alert("Em xin chân thành cảm ơn ^^!")
+            document.write("<table border=1 width=100%>")
+            for( let i = 1; i <= 9; i++)
+            {
+                document.write("<tr>")
+                for (let n = 2; n <= 9; n++)
+                    document.write("<td>" +n + "x" + i +"="+ (n*i));
+                document.write("</td>");
+                document.write("</tr>")
+            }
+            document.write("</tr></table>")
+        }
+    </script>
+</head>
+<body>
+<h2>Bảng chưởng cưu</h2>
+<p id="demo">Lạy ông đi qua, lạy bà đi lại, gọi cái bảng chưởng cưu ra cho em đi nghỉ :(( .</p>
+<button onclick="bangcuuchuong()">Kích đê</button>
+</body>
+</html>
